@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "文章下载器",
+  "version": "1.0",
+  "description": "将知乎、CSDN、公众号、博客园文章导出为 Markdown",
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "contextMenus"
+  ],
+  "host_permissions": [
+    "*://*.zhihu.com/*",
+    "*://blog.csdn.net/*",
+    "*://mp.weixin.qq.com/*",
+    "*://*.cnblogs.com/*",
+    "*://www.jianshu.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png"
+  }
+}

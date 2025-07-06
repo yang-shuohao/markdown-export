@@ -1,0 +1,58 @@
+body {
+  font-family: system-ui, sans-serif;
+  background-color: white;
+  color: black;
+  padding: 16px;
+  width: 220px;
+  position: relative;
+}
+
+button {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #0084ff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0070cc;
+}
+
+#github-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: auto;
+  padding: 6px 12px;
+  background-color: red;
+  font-weight: bold;
+}
+
+#github-btn:hover {
+  background-color: darkred;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: white;
+  }
+
+  button {
+    background-color: #005fcc;
+  }
+
+  #github-btn {
+    background-color: #cc0000;
+  }
+
+  #github-btn:hover {
+    background-color: #990000;
+  }
+}
