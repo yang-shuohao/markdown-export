@@ -12,6 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const githubBtn = document.getElementById("github-btn");
   githubBtn.addEventListener("click", () => {
-    chrome.tabs.create({ url: "https://github.com/你的用户名/你的仓库名" });
+    chrome.tabs.create({ url: "https://github.com/yang-shuohao/markdown-export" });
   });
 });
